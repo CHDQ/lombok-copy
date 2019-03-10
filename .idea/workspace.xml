@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a975a369-a515-46f1-910c-8cd49dfce845" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/dq/lombok/Generator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/dq/lombok/Generator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/dq/lombok/MyParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/dq/lombok/MyParser.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -42,13 +41,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="ft" value="9" />
-          <entry key="java" value="1248" />
+          <entry key="java" value="1332" />
           <entry key="xml" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1248" />
+          <entry key="JAVA" value="1332" />
           <entry key="VTL" value="9" />
           <entry key="XML" value="4" />
         </counts>
@@ -69,11 +68,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/dq/lombok/Generator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="380">
+              <caret line="34" column="17" lean-forward="true" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#739#740#0" expanded="true" />
@@ -85,11 +84,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/dq/lombok/MyParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="361">
+              <caret line="46" column="43" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -179,8 +181,8 @@
         <option value="$PROJECT_DIR$/src/main/java/org/dq/lombok/DataParser.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/dq/lombok/MyClassWriter.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/org/dq/lombok/MyParser.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/dq/lombok/Generator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/dq/lombok/MyParser.java" />
       </list>
     </option>
   </component>
@@ -332,7 +334,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552231830684" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552232115410" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -362,12 +364,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1552186900324</updated>
-      <workItem from="1552186906678" duration="11133000" />
+      <workItem from="1552186906678" duration="11417000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11133000" />
+    <option name="totallyTimeSpent" value="11417000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -571,23 +573,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/dq/lombok/MyParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/dq/lombok/Generator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="380">
+          <caret line="34" column="17" lean-forward="true" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#739#740#0" expanded="true" />
             <element signature="e#795#796#0" expanded="true" />
             <element signature="e#865#866#0" expanded="true" />
             <element signature="e#923#924#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/dq/lombok/MyParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="46" column="43" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
