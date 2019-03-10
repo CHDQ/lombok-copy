@@ -1,0 +1,4 @@
+org\dq\App.class
+org\dq\lombok\Generator.class
+org\dq\usage\MyBean.class
+org\dq\lombok\Data.class
