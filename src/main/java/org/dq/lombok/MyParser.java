@@ -6,11 +6,7 @@ import javax.lang.model.element.Element;
 import javax.lang.model.element.TypeElement;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
-import java.util.regex.Matcher;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -23,9 +19,10 @@ public class MyParser {
     private Element element;
     private Set<String> needGenerateMethod;
 
-    public MyParser(Element element) {
+    public MyParser(Element element) throws ClassNotFoundException {
         this.element = element;
-        needGenerateMethod = new HashMap<>();
+        needGenerateMethod = new HashSet<>();
+        findUndefinedGetOrSetField();
     }
 
     /**
@@ -47,5 +44,9 @@ public class MyParser {
         Set<String> methodNames = Arrays.stream(declaredMethods).map(method -> method.getName()).collect(Collectors.toSet());
         String allMethods = StringUtils.join(methodNames, ",");
         needGenerateMethod = getOrSetMethods.stream().filter(getOrSetMethod -> !allMethods.matches(("^.*" + getOrSetMethod + ".*$"))).collect(Collectors.toSet());
+    }
+
+    public void makeGenerate() {
+
     }
 }

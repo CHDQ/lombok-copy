@@ -1,8 +1,5 @@
 package org.dq.lombok;
 
-import org.objectweb.asm.ClassReader;
-import org.objectweb.asm.ClassWriter;
-import org.objectweb.asm.Opcodes;
 
 import javax.annotation.processing.AbstractProcessor;
 import javax.annotation.processing.Filer;
@@ -11,10 +8,8 @@ import javax.annotation.processing.RoundEnvironment;
 import javax.lang.model.SourceVersion;
 import javax.lang.model.element.Element;
 import javax.lang.model.element.TypeElement;
-import java.io.IOException;
 import java.util.Set;
 
-import static org.objectweb.asm.Opcodes.*;
 
 /**
  * @Author: duanqiong
@@ -38,10 +33,8 @@ public class Generator extends AbstractProcessor {
         Set<? extends Element> elements = roundEnv.getElementsAnnotatedWith(Data.class);
         elements.forEach(element -> {
             try {
-                ClassReader classReader = new ClassReader(element.getClass().getCanonicalName());
-                ClassWriter classWriter = new ClassWriter(classReader, 0);
-                classWriter.visitMethod(ACC_PUBLIC,)
-            } catch (IOException e) {
+                new MyParser(element).makeGenerate();
+            } catch (ClassNotFoundException e) {
                 e.printStackTrace();
             }
         });
