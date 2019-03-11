@@ -21,7 +21,7 @@ import java.util.Set;
  */
 //不建议使用下面的注解去修改，支持的java版本和java的注解.该方式可能存在不兼容的问题
 //@SupportedSourceVersion(SourceVersion.RELEASE_11)
-//@SupportedAnnotationTypes("org.dq.lombok.Data")
+//@SupportedAnnotationTypes("Data")
 public class Generator extends AbstractProcessor {
     private Filer filer;
     private Messager messager;
