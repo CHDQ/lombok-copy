@@ -1,4 +1,6 @@
 # lombok-copy
+![image](https://img.shields.io/badge/jdk-v1.8-brightgreen.svg)
+
 模拟lombok插件实现lombok自动生成get和set方法
 
 ## [调试方法(参考stack overflow)](https://stackoverflow.com/questions/31345893/debug-java-annotation-processors-using-intellij-and-maven)
