@@ -1,7 +1,7 @@
 # lombok-copy
 模拟lombok插件实现lombok自动生成get和set方法
 
-## 调试方法
+## [调试方法(参考stack overflow)](https://stackoverflow.com/questions/31345893/debug-java-annotation-processors-using-intellij-and-maven)
 1. First of all, [download and install Maven](https://maven.apache.org/download.cgi), then download and install IntelliJ IDEA (referred to as IDEA from here on). 
 (If you don't know how to use Windows CMD, here is a short [tutorial](http://www.7tutorials.com/command-prompt-how-use-basic-commands) for it, also: [how to open the command prompt](http://www.7tutorials.com/7-ways-launch-command-prompt-windows-7-windows-8)
 2. Create a Maven project in IDEA without any Archetype. Then create some some package in src > main > java
@@ -79,4 +79,4 @@ public class MyProcessorTest {
 13. Go back to the Command Prompt and if nothing is happening press some key to wake it up.
 14. If everything was set up right, IDEA will stop at the breakpoint, suspending javac's (the Java compiler) execution.
 
-## [mvn compiler plugin 参数](http://maven.apache.org/plugins/maven-compiler-plugin/compile-mojo.html#forceJavacCompilerUse)
+## [mvn compiler plugin 参数](http://maven.apache.org/plugins/maven-compiler-plugin/compile-mojo.html#forceJavacCompilerUse) 
