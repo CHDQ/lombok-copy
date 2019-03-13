@@ -79,4 +79,4 @@ public class MyProcessorTest {
 13. Go back to the Command Prompt and if nothing is happening press some key to wake it up.
 14. If everything was set up right, IDEA will stop at the breakpoint, suspending javac's (the Java compiler) execution.
 
-## [mvn compiler plugin 参数](http://maven.apache.org/plugins/maven-compiler-plugin/compile-mojo.html#forceJavacCompilerUse)
+## [mvn compiler plugin 参数](http://maven.apache.org/plugins/maven-compiler-plugin/compile-mojo.html#forceJavacCompilerUse) 
