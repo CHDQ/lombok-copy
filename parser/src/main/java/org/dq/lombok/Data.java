@@ -10,7 +10,7 @@ import java.lang.annotation.Target;
  * @Date: 2019/3/10 16:46
  * @Version 1.0
  */
-@Retention(RetentionPolicy.CLASS)
+@Retention(RetentionPolicy.SOURCE)
 @Target(ElementType.TYPE)
 public @interface Data {
 }
