@@ -12,6 +12,8 @@ import javax.tools.JavaFileObject;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.util.Set;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 
 /**
@@ -35,21 +37,9 @@ public class Generator extends AbstractProcessor {
 
     @Override
     public boolean process(Set<? extends TypeElement> annotations, RoundEnvironment roundEnv) {
-        messager.printMessage(Diagnostic.Kind.NOTE, "process beginTime:" + DateTime.now().toString("yyyy-MM-dd HH:mm:ss"));
-        Set<? extends Element> elements = roundEnv.getElementsAnnotatedWith(Data.class);
-        elements.forEach(element -> {
-            try {
-                byte[] bytes = new MyParser(element).makeGenerate();
-                JavaFileObject classFile = filer.createClassFile(element.getSimpleName(), element);
-                OutputStream outputStream = classFile.openOutputStream();
-                outputStream.write(bytes);
-            } catch (ClassNotFoundException e) {
-                e.printStackTrace();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        });
-        messager.printMessage(Diagnostic.Kind.NOTE, "process endTime:" + DateTime.now().toString("yyyy-MM-dd HH:mm:ss"));
+        messager.printMessage(Diagnostic.Kind.NOTE, "Generator process beginTime:" + DateTime.now().toString("yyyy-MM-dd HH:mm:ss"));
+
+        messager.printMessage(Diagnostic.Kind.NOTE, "Generator process endTime:" + DateTime.now().toString("yyyy-MM-dd HH:mm:ss"));
         return true;//返回true的时候注解不会被后面process处理
     }
 
@@ -60,6 +50,6 @@ public class Generator extends AbstractProcessor {
 
     @Override
     public Set<String> getSupportedAnnotationTypes() {
-        return Set.of(Data.class.getCanonicalName());
+        return Stream.of(Data.class.getCanonicalName()).collect(Collectors.toSet());
     }
 }
