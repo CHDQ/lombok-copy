@@ -82,3 +82,6 @@ public class MyProcessorTest {
 14. If everything was set up right, IDEA will stop at the breakpoint, suspending javac's (the Java compiler) execution.
 
 ## [mvn compiler plugin 参数](http://maven.apache.org/plugins/maven-compiler-plugin/compile-mojo.html#forceJavacCompilerUse) 
+
+## jcTree生成有参函数时可能出现错误,已参照OverStack解决
+>https://stackoverflow.com/questions/46874126/java-lang-assertionerror-thrown-by-compiler-when-adding-generated-method-with-pa

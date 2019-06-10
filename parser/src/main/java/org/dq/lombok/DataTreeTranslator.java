@@ -89,7 +89,7 @@ public class DataTreeTranslator extends TreeTranslator {
 
     private JCTree.JCMethodDecl createSetMethod(JCTree.JCVariableDecl jcVariableDecl) {
         ListBuffer<JCTree.JCStatement> jcStatements = new ListBuffer<>();
-        treeMaker.at(jcClassDecl.pos);
+        treeMaker.at(jcClassDecl.pos);//该行代码必须有,否则有参函数无法通过编译
         jcStatements.append(treeMaker.Exec(treeMaker.Assign(treeMaker.Select(treeMaker.Ident(names.fromString(THIS)),
                 jcVariableDecl.name), treeMaker.Ident(jcVariableDecl.name))));
         JCTree.JCBlock jcBlock = treeMaker.Block(0, jcStatements.toList());//0为访问标志
